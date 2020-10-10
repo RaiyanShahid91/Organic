@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Second_Main_Activity"
+    android:background="@drawable/registerback"
+    android:orientation="vertical">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="60dp">
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:cardElevation="30dp"
+              android:layout_margin="20dp"
+              app:cardCornerRadius="500dp"
+              android:layout_gravity="center"
+              app:cardBackgroundColor="#035906">
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Join"
+             android:textColor="#FAF7F7"
+             android:textStyle="bold"
+             android:background="@drawable/secondmainnuttondesign"
+             android:layout_margin="30dp"
+             android:layout_gravity="center"
+             android:id="@+id/join"></Button>
+          </androidx.cardview.widget.CardView>
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:cardElevation="30dp"
+              android:layout_margin="20dp"
+              app:cardCornerRadius="1000dp"
+              android:layout_gravity="center"
+              app:cardBackgroundColor="#035906">
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Login"
+                  android:textColor="#FAF7F7"
+                  android:textStyle="bold"
+                  android:background="@drawable/secondmainnuttondesign"
+                  android:layout_margin="30dp"
+                  android:layout_gravity="center"
+                  android:id="@+id/login"></Button>
+          </androidx.cardview.widget.CardView>
+          <androidx.cardview.widget.CardView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:cardElevation="30dp"
+              android:layout_margin="20dp"
+              app:cardCornerRadius="500dp"
+              android:layout_gravity="center"
+              app:cardBackgroundColor="#035906">
+              <Button
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Home"
+                  android:textColor="#FAF7F7"
+                  android:textStyle="bold"
+                  android:background="@drawable/secondmainnuttondesign"
+                  android:layout_margin="30dp"
+                  android:layout_gravity="center"
+                  android:id="@+id/home"></Button>
+          </androidx.cardview.widget.CardView>
+      </LinearLayout>
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/textView4"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="35dp"
+              android:gravity="center"
+              android:text="Make it a Lifestyle, not a Duty"
+              android:textColor="#0A0B0A"
+              android:textSize="26sp"
+              android:textStyle="bold"
+              app:fontFamily="cursive" />
+      </LinearLayout>
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        android:layout_margin="5dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:id="@+id/linear"
+                android:background="#049F0B">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:text="Status"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:id="@+id/status"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffff"
+                    android:padding="5dp"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/date"
+                    android:gravity="end"
+                    ></TextView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firsttext"
+                android:textColor="#070707"
+                android:textSize="10sp"
+                android:layout_below="@+id/linear"
+                android:padding="7dp"
+                android:gravity="center">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/barcodeimage"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/barcode"
+                android:layout_below="@id/firsttext"></ImageView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

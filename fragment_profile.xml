@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile_fragment"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawer_layout"
+    android:background="#070707">
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/sidenavigation_view"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        android:layout_gravity="start">
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#EB06B10D">
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="?attr/actionBarTheme"
+                    app:title="Profile"
+                    app:titleTextColor="#FCFDFC"
+                    app:navigationIcon="@drawable/ic_organic_category" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#88FD01"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/leavehand"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="94dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="#000B0A0A"
+                        android:src="@drawable/person"
+                        app:civ_border_width="2dp"
+                        app:civ_circle_background_color="#090909" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="10dp"
+                app:cardElevation="5dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:id="@+id/linear1">
+
+                    <TextView
+                        android:id="@+id/wallet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Wallet :"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/walletans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#090909"
+                        android:text="41"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/matchingrank"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Matching Rank :"
+                        android:textColor="#090909"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/matchingrankans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#090909"
+                        android:text="Diamond Manager"
+                        android:textSize="12sp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/profiledown"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/membercode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Member Code"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/membercodeans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:textSize="12sp"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/membername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Member Name"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/membernameans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:text="Kakli Sarkar"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/sponsorcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Sponsor Code"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/sponsorcodeans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="152364"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/sponsorname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Sponsor Name"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/sponsornameans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:text="kakli Sarkar"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Position"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/positionsns"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:text="Left"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/mobilenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Mobile Number"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+                    <TextView
+                        android:id="@+id/mobilenumberans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:text="7523782635"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Address"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <TextView
+                        android:id="@+id/addressans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:text="Santoshi Colony, Nagpur"
+                        android:textSize="12sp"
+                        android:background="@drawable/inputtextbuttoninprofile"></TextView>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:id="@+id/pwchange"
+                    android:padding="3dp"
+                    android:textColor="#070707"
+                    android:background="@drawable/sign_up_in_button"
+                    android:layout_gravity="center"></Button>
+                <TextView
+                    android:id="@+id/oldpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Old Password"
+                    android:textColor="#000000"
+                    android:layout_marginTop="20dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <EditText
+                        android:id="@+id/oldpasswordet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        android:hint="Type your Old Password"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:visibility="gone"></EditText>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/newpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="New Password"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <EditText
+                        android:id="@+id/newpasswordet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        android:hint="Type New Password"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:visibility="gone"></EditText>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/confirmpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Re-Type Password"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"></TextView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/input_btn"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="5dp">
+
+
+                    <EditText
+                        android:id="@+id/confirmpasswordet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textColor="#070707"
+                        android:textSize="12sp"
+                        android:hint="Re-Type your New Password"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:visibility="gone"></EditText>
+                </androidx.cardview.widget.CardView>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm"
+                    android:textStyle="bold"
+                    android:textColor="#070707"
+                    android:layout_gravity="center"
+                    android:textSize="12sp"
+                    android:id="@+id/confirm"
+                    android:background="@drawable/sign_up_in_button"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"></Button>
+
+            </LinearLayout>
+        </LinearLayout>
+      </LinearLayout>
+    </ScrollView></androidx.drawerlayout.widget.DrawerLayout>

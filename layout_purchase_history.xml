@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#049F0B"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/membercode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:text="Member Code :"
+                    android:textColor="#FDFDFD"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:gravity="center"></TextView>
+
+                <TextView
+                    android:id="@+id/membercodeans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textColor="#FDFDFD"
+                    android:textSize="10sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/noofpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="7dp"
+                    android:text="No of Pin :"
+                    android:textColor="#FDFDFD"
+                    android:textSize="10sp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:id="@+id/noofpinans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:padding="7dp"
+                    android:textColor="#FDFDFD"
+                    android:textSize="10sp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/purchasedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="7dp"
+                    android:text="Purchase date :"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+
+                <TextView
+                    android:id="@+id/purchasedateans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="7dp"
+                    android:textColor="#050505"
+                    android:textSize="10sp"
+                    android:layout_marginRight="60dp"></TextView>
+
+                <TextView
+                    android:id="@+id/pinvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:padding="7dp"
+                    android:text="Pin Value :"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+
+                <TextView
+                    android:id="@+id/pinvalueans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:padding="7dp"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/purchasevalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="7dp"
+                    android:text="Purchase Value :"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+
+                <TextView
+                    android:id="@+id/purchasevalueans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60dp"
+                    android:padding="7dp"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:padding="7dp"
+                    android:text="Status :"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+
+                <TextView
+                    android:id="@+id/statusans"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:padding="7dp"
+                    android:textColor="#050505"
+                    android:textSize="10sp"></TextView>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join_Now_Activity"
+    android:orientation="vertical"
+    android:background="#0A830F">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#EB06B10D"
+            android:id="@+id/linear1">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/arrowback" />
+        <TextView
+            android:id="@+id/refer_earn_btn"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:gravity="center"
+            android:text="Join Now"
+            android:textColor="#ffff"
+            android:textSize="18sp"></TextView>
+    </LinearLayout>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#32B303">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/sponsorcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Sponsor Code"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"></TextView>
+
+                    <EditText
+                        android:id="@+id/sponsorcodeans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:drawableLeft="@drawable/sponsorcode"
+                        android:gravity="center"
+                        android:hint="Sponsor Code"
+                        android:padding="5dp"
+                        android:textColor="#000000"></EditText>
+
+                    <TextView
+                        android:id="@+id/sponsorname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Sponsor Name"
+                        android:textColor="#ffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"></TextView>
+
+                    <EditText
+                        android:id="@+id/sponsornameans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sponsorcode"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:drawableLeft="@drawable/sponsorname"
+                        android:gravity="center"
+                        android:hint="Sponsor Name"
+                        android:padding="5dp"
+                        android:textColor="#070707"
+                        android:visibility="gone"></EditText>
+
+                    <TextView
+                        android:id="@+id/sponsormobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="Sponsor Mobile Number"
+                        android:textColor="#ffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="gone"></TextView>
+
+                    <EditText
+                        android:id="@+id/sponsormobileans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sponsorcode"
+                        android:background="@drawable/inputtextbuttoninprofile"
+                        android:drawableLeft="@drawable/sponsormobile"
+                        android:gravity="center"
+                        android:hint="Sponsor Mobile Number"
+                        android:padding="5dp"
+                        android:textColor="#070707"
+                        android:visibility="gone"></EditText>
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radiogroup"
+                        >
+
+                        <TextView
+                            android:id="@+id/position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_margin="10dp"
+                            android:text="Position"
+                            android:textColor="#ffff"
+                            android:textSize="15dp"
+                            android:textStyle="bold"></TextView>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Left"
+                            android:id="@+id/left"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#ffff"></RadioButton>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Right"
+                            android:id="@+id/right"
+                            android:layout_margin="10dp"
+                            android:textColor="#ffff"
+                            ></RadioButton></RadioGroup>
+
+                    <Button
+                        android:id="@+id/join"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/loginandjoinbutton"
+                        android:text="Join"
+                        android:textColor="#070707"
+                        android:textStyle="bold"></Button>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
